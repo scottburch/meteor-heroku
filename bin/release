@@ -1,6 +1,9 @@
 #!/bin/sh
-echo *********************HERE*********************
+#cat <<EOF
+#default_process_types:
+#  web: .meteor/heroku_build/bin/node \$NODEJS_PARAMS .meteor/heroku_build/app/main.js
+#EOF
 cat <<EOF
 default_process_types:
-  web: .meteor/heroku_build/bin/node \$NODEJS_PARAMS .meteor/heroku_build/app/main.js
+  web: touch me
 EOF
